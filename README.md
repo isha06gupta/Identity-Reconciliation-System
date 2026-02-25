@@ -1,4 +1,4 @@
-# 🚀 BiteSpeed Identity Reconciliation API
+# BiteSpeed Identity Reconciliation API
 
 A production-ready backend service built for the **BiteSpeed Backend Engineering Internship Assignment**.
 
@@ -6,7 +6,7 @@ This service reconciles customer identities across multiple purchases using diff
 
 ---
 
-## 🌐 Live API
+##  Live API
 
 > After deployment, update this:
 
@@ -28,7 +28,7 @@ POST /identify
 
 ---
 
-## 🧠 Problem Statement
+##  Problem Statement
 
 Customers may place orders using different contact details.
 
@@ -61,7 +61,7 @@ This service:
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 src/main/java/com/bitespeed/identity_reconciliation
@@ -103,7 +103,7 @@ src/main/java/com/bitespeed/identity_reconciliation
 
 ---
 
-## ✅ Features
+##  Features
 
 * Identity reconciliation logic
 * Primary ↔ Secondary contact linking
@@ -114,7 +114,7 @@ src/main/java/com/bitespeed/identity_reconciliation
 
 ---
 
-## 🧪 Run Locally
+##  Run Locally
 
 ```bash
 mvn clean install
@@ -135,7 +135,7 @@ GET /
 
 ---
 
-## ☁️ Deployment (Render)
+##  Deployment (Render)
 
 1. Push repository to GitHub
 2. Create PostgreSQL database on Render
@@ -165,7 +165,7 @@ PORT
 
 ---
 
-## 📌 Engineering Decisions
+##  Engineering Decisions
 
 * Oldest contact enforced as PRIMARY
 * New information creates SECONDARY contact
@@ -174,7 +174,7 @@ PORT
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 Isha Gupta
 BiteSpeed Backend Internship Submission
