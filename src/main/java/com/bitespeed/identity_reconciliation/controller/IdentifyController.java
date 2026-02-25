@@ -5,6 +5,7 @@ import com.bitespeed.identity_reconciliation.dto.IdentifyResponse;
 import com.bitespeed.identity_reconciliation.service.IdentityService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,4 +30,8 @@ public class IdentifyController {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, exception.getMessage());
         }
     }
+    @GetMapping("/")
+public String healthCheck() {
+    return "BiteSpeed Identity Reconciliation API is running ";
+}
 }
