@@ -11,7 +11,7 @@ This service reconciles customer identities across multiple purchases using diff
 > After deployment, update this:
 
 ```
-Base URL: https://<your-render-service>.onrender.com
+Base URL: https://identity-reconciliation-system.onrender.com/identify
 ```
 
 Health Check:
