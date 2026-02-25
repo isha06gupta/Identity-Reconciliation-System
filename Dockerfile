@@ -1,13 +1,15 @@
-FROM eclipse-temurin:17-jdk
+FROM maven:3.9.9-eclipse-temurin-17 AS build
 
 WORKDIR /app
 
 COPY . .
 
-# give permission to mvnw
-RUN chmod +x mvnw
+RUN mvn clean package -DskipTests
 
-# build project
-RUN ./mvnw clean package -DskipTests
+FROM eclipse-temurin:17-jdk
 
-CMD ["java","-jar","target/identity-reconciliation-0.0.1-SNAPSHOT.jar"]
+WORKDIR /app
+
+COPY --from=build /app/target/identity-reconciliation-0.0.1-SNAPSHOT.jar app.jar
+
+CMD ["java","-jar","app.jar"]
