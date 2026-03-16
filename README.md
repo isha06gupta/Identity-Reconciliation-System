@@ -1,6 +1,6 @@
-# BiteSpeed Identity Reconciliation API
+# Identity Reconciliation API
 
-Backend service built for the BiteSpeed Backend Engineering Internship assignment.
+Backend service built for the.
 
 The API reconciles customer identities created using different emails or phone numbers and returns a unified customer profile.
 
@@ -90,4 +90,4 @@ PORT
 ## Author
 
 Isha Gupta
-BiteSpeed Backend Internship Submission
+
