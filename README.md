@@ -1,6 +1,5 @@
 # Identity Reconciliation API
 
-Backend service built for the.
 
 The API reconciles customer identities created using different emails or phone numbers and returns a unified customer profile.
 
